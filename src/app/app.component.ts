@@ -13,6 +13,7 @@ export class AppComponent {
   public login: Login = {
     email: '',
     password: '',
+    repassword:''
   }
   public onSubmit() {
     console.log('el email es' + this.login.email)
@@ -23,5 +24,6 @@ export class AppComponent {
 
 interface Login {
   email: string,
-  password: string
+  password: string,
+  repassword: string
 }
